@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/home/style.css">
 </head>
+
 <body>
     <header>
         <div class="">
             <div class="navbar">
+                <div class="side-bar d-none">
+                    <span class="fa fa-bars"></span>
+                </div>
+
                 <div class="container">
                     <div class="left-navbar d-flex">
                         <div class="button">
@@ -19,7 +28,7 @@
                                 <span>Call for support:</span>
                                 <span class="number">0123-456-789</span>
                             </a>
-    
+
                         </div>
                         <div class="button">
                             <a href="" class="email">
@@ -27,32 +36,390 @@
                                 <span>sales@yourcompany.com</span>
                             </a>
                         </div>
-                        <span>Welcome visitor you can <a href="">login</a> or <a href="">create an account.</a></span>
+                        <span class="login">Welcome visitor you can <a href="">login</a> or <a href="">create an
+                                account.</a></span>
                     </div>
 
 
                     <div class="right-side d-flex">
-                        <div>
-                            <i class="fa fa-user"></i>
-                            <i class="fa-solid fa-angle-down"></i>
+                        <div class="account-info dropdown-button">
+
+                            <div style=" padding:  10px 0;">
+                                <a href="" class="icon">
+                                    <i class="fa fa-user"></i>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                            </div>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="">Wishlist</a></li>
+                                    <li><a href="">Check Out</a></li>
+                                    <li><a href="">My Account</a></li>
+                                    <li><a href="">Login</a></li>
+                                    <li><a href="">Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="language dropdown-button">
+                            <a href="" class="icon">
+                                <i class="fa fa-cog"></i>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href=""><img src="../assets/images/home-images/currencies_img_1_2x.png"
+                                                alt=""> USD</a></li>
+                                    <li><a href=""><img src="../assets/images/home-images/blue-flag.png" alt=""> EUR</a>
+                                    </li>
+                                    <li><a href=""><img src="../assets/images/home-images/austealia.png" alt=""> AUD</a>
+                                    </li>
+                                    <li><a href=""><img src="../assets/images/home-images/england.png" alt=""> GBP</a>
+                                    </li>
+                                    <li><a href=""><img src="../assets/images/home-images/japan.png" alt=""> JPY</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <span class="fa fa-shopping-cart icon cart-icon"></span>
+                                <span class="cart-info">Cart: 0 items - $0.00</span>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" style="color: black;">
+                                            <h2>Your cart is currently empty.</h2>
+                                            <p style="text-align: center;">Continue shopping here.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-navbar">
+                <div class="container">
+                    <div style="display: flex;justify-content:space-between;align-items: center;">
+                        <div class="logo">
+                            <a href=""><img src="../assets/images/home-images/logo_2x.avif" alt=""></a>
+                        </div>
+                        <div class="navbar-menu">
+                            <ul style="display: flex; list-style: none; align-items: center;">
+                                <li class="down-menu">
+                                    <div class="down-menu-title">
+                                        <a href="" class="home">HOME </a>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <div class="menu-content">
+                                        <a href="">Home Style 1</a>
+                                        <a href="">Home Style 2</a>
+                                        <a href="">Home Style 3</a>
+                                        <a href="">Home Style 4</a>
+                                        <a href="">Home Style 5</a>
+                                        <a href="">Home Style 6</a>
+                                    </div>
+                                </li>
+                                <li class="down-menu">
+                                    <div class="down-menu-title">
+
+                                        <a href="">COLLECTION </a>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <div class="menu-content">
+                                        <a href="">Left Sidebar Grid</a>
+                                        <a href="">Right Sidebar Grid</a>
+                                        <a href="">Fullwidth Grid</a>
+                                        <a href="">Left Sidebar List</a>
+                                        <a href="">Right Sidebar List</a>
+                                        <a href="">Fullwidth List</a>
+                                    </div>
+                                </li>
+                                <li class="down-menu">
+                                    <div class="down-menu-title">
+                                        <a href="">PRODUCT </a>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <div class="menu-content" style="width: 170px;">
+                                        <a href="">Fullwidth</a>
+                                        <a href="">Left Sidebar</a>
+                                        <a href="">Right Sidebar</a>
+                                    </div>
+                                </li>
+                                <li class="down-menu">
+                                    <div class="down-menu-title">
+                                        <a href="">MEGAMENU </a>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <div class="menu-content mega-menu">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <a href="">Contrary to popular belief</a><br><br>
+                                                <a href="">Lorem Ipsum as their</a><br><br>
+                                                <a href="">Various versions have evolved</a><br><br>
+                                                <a href="">Latin professor at Hampden-Sydney</a><br><br>
+                                                <a href="">Neque porro quisquam est qui</a>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="block-video">
+                                                    <div class="widget-inner">
+                                                        <div class="video-wrapper"><iframe
+                                                                src="https://www.youtube.com/embed/aE7-KZVXvJs"
+                                                                height="200" allowfullscreen=""></iframe></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 best-seller">
+                                                <h6>BESTSELLER</h6>
+                                                <div class="product d-flex gap-3">
+                                                    <div>
+                                                        <img src="../assets/images/home-images/tayota-86.webp" alt="">
+                                                    </div>
+                                                    <div class="content">
+                                                        <span>Aenean consequat sagittis</span>
+                                                        <div class="price">
+                                                            <span class="old-price">$30.00</span>
+                                                            <span>$19.99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product d-flex gap-3 mt-2">
+                                                    <div>
+                                                        <img src="../assets/images/home-images/tayota-white.webp"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="content">
+                                                        <span>Consequat sagittis lacinia</span>
+                                                        <div class="price">
+                                                            <span class="old-price">$24.99</span>
+                                                            <span>$100.000.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 image">
+                                                <img src="../assets/images/home-images/buick-regal.avif" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="down-menu">
+                                    <div class="down-menu-title">
+                                        <a href="">FEATURE </a>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                        
+                                    </div>
+                                    <div class="menu-content" style="width: 200px;">
+                                        <a href="">Template Documnet</a>
+                                        <a href="">Typo</a>
+                                        <a href="">Framework</a>
+                                    </div>
+                                </li>
+                                <div class="menu-content">
+
+                                </div>
+                                <li class="down-menu">
+                                    <div class="down-menu-title">
+                                        <a href="">BLOG</a>
+                                    </div>
+                                </li>
+                                <li class="down-menu">
+                                    <div class="down-menu-title">
+                                        <a href="">FEATURE </a>
+                                        <i class="fa-solid fa-caret-down"></i>
+
+                                    </div>
+                                    <div class="menu-content" style="width: 220px;">
+                                        <a href="">Shortcode list</a>
+                                        <a href="">product description</a>
+                                        <a href="">shortcode in blog</a>
+                                        <a href="">shortcode in page</a>
+                                        <a href="">shorcode in collection</a>
+                                    </div>
+                                </li>
+                                <li class="down-menu">
+                                    <div class="down-menu-title">
+                                        <a href="">CONTACT</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-area">
+                    <div class="slider">
+                        <div class="container position-absolute" style="left: 168px;">
+                            <div class="search">
+                                <div class="category">
+                                    <button class="btn btn-secondary  d-flex" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div>
+                                            <i class="fa-solid fa-bars"></i>
+                                        </div>
+                                        <div>
+                                            BROWSER CATEGORIES <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+
+                                    </button>
+                                    <div class="down-menu" style="position: absolute;">
+                                        <ul style="list-style: none;">
+                                            <li>
+                                                <div>
+                                                    <a href=""><img src="../assets/images/home-images/honda-1.png" alt=""> Honda</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href=""><img src="../assets/images/home-images/chevrolet-1.png" alt=""> Chevrolet</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href=""><img src="../assets/images/home-images/ford-1.png" alt=""> Ford</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href=""><img src="../assets/images/home-images/woksvagen.png" alt=""> Audi</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href=""><img src="../assets/images/home-images/mitsubishi-1.png" alt=""> Mitsubishi</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href=""><img src="../assets/images/home-images/nissan-1.png" alt=""> Nissan</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href=""><img src="../assets/images/home-images/porshe-1.png" alt="">Porshe</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href=""><img src="../assets/images/home-images/suzuki.png" alt=""> Suzuki</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href=""><img src="../assets/images/home-images/tayota-1.webp" alt=""> Toyota</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href=""><img src="../assets/images/home-images/lexus-1.png" alt=""> Lexus</a>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="search-area">
+                                    <div class="input">
+                                        <input type="text" placeholder="Search..."><i
+                                            class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                         <div>
-                            <i class="fa fa-cog"></i>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                        <div>
-                            <span class="fa fa-shopping-cart icon"></span>
-                            <span>Cart: 0 items - $0.00</span>
+                            <div class="slide"
+                                style="height: 500px; background-image: url(../assets/images/home-images/background.webp);background-position: center;background-size: cover;">
+                                <div class="container">
+                                    <span class="h3">On the road</span>
+                                    <span class="h2">Choose</span>
+                                    <span class="h1">Smartest</span>
+                                    <div class="btn mt-3">
+                                        <a href="">Veiw More</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
 
 
-
+    <main>
+        <section id="special">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 cart" style="background-image: url(../assets/images/home-images/trending.avif); background-size: cover; background-position: center;">
+                        <div class="with-opacity"></div>
+                        <div class="without-opacity"></div>
+                    </div>
+                    <div class="col-3 cart" style="background-image: url(../assets/images/home-images/exclusive.avif); background-size: cover; background-position: center;">
+                        <div class="with-opacity"></div>
+                        <div class="without-opacity"></div>
+                    </div>
+                    <div class="col-6 cart long-cart" style="background-image: url(../assets/images/home-images/low-price.webp); background-size: cover; background-position: center;">
+                        <div class="with-opacity"></div>
+                        <div class="without-opacity"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="offer" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card-title d-flex justify-content-between">
+                            <h1>Our Offer</h1>
+                            <div class="icons">
+                                <button><i class="fa-solid fa-circle-chevron-left"></i></button>
+                                <button><i class="fa-solid fa-circle-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="title"><a href="">Quam vitnibh aliqueobo</a></div>
+                            <div class="image">
+                                <img src="../assets/images/home-images/toyota-white.webp" alt="">
+                            </div>
+                            <div class="price">
+                                <span>$450.00</span>
+                            </div>
+                            <div class="content d-flex gap-5">
+                                <div class="button">
+                                    <a href="">SELECT OPTIONS</a>
+                                </div>
+                                <div class="description"><span>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which...</span></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+   
     <script src="https://kit.fontawesome.com/924ca9d7ed.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="../assets/js/home-script.js"></script>
 </body>
+
 </html>
