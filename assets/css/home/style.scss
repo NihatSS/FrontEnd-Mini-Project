@@ -587,7 +587,7 @@ main {
         }
     }
 
-    #offer {
+    #offer,#cars {
         height: 500px;
 
         .card-title {
@@ -754,6 +754,17 @@ main {
 
 
 
+    }
+    #cars{
+        height: 1000px;
+        .card{
+            width: 24%;
+            margin-top: 20px;
+            justify-content: space-between;
+            .button{
+                margin-bottom: 20px;
+            }
+        }
     }
 
     #buying {
@@ -971,25 +982,162 @@ main {
     #order-details {
         background: rgb(255, 188, 0);
         background: linear-gradient(90deg, rgba(255, 188, 0, 1) 0%, rgba(222, 216, 0, 1) 50%, rgba(255, 188, 0, 1) 100%);
-        height: 500px;
-        .icon{
+        height: 600px;
+
+        .icon {
             font-size: 30px;
         }
-        .deliver{
+
+        .deliver {
             margin-left: 10px;
-            .title{
+
+            .title {
                 font-size: 12px;
                 color: #535353;
                 font-weight: 800;
             }
-            .info{
+
+            .info {
                 font-size: 11px;
             }
         }
 
-        .main-section{
-            
+        .main-section {
+            .tweeter {
+                h3 {
+                    font-weight: 300;
+                }
+
+                .twitter {
+                    font-size: 40px;
+                    margin: 50px 0;
+                }
+
+                h2 {
+                    font-weight: 900;
+                }
+
+                a {
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    background-color: #1D9BF0;
+                    text-decoration: none;
+                    transition: all 0.25s;
+                    font-size: 20px;
+
+                    &:hover {
+                        background-color: #1982c9;
+                    }
+                }
+            }
+
+            .contact {
+                h3 {
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    padding: 0;
+                    margin: 0;
+                    gap: 10px;
+                    margin-top: 20px;
+                    a {
+                        text-decoration: none;
+                        color: black !important;
+                        font-size: 10px;
+                        padding: 10px;
+                        border-radius: 50%;
+                        border: 1px solid #7D7D7D;
+                        &:hover{
+                            border: 1px solid #1982c9;
+                        }
+                    }
+                }
+                
+
+            }
         }
     }
+}
 
+footer{
+    height: 350px;
+    background-color: #222222;
+    color: white;
+    .info{
+        padding-top: 50px;
+        border-bottom: 1px solid #6B6B6B;
+        h6{
+          font-size: 15px;  
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+            a{
+                text-decoration: none;
+                color: #7D7D7D;
+                font-size: 13px;
+                transition: all 0.25s;
+                &:hover{
+                    margin-left: 5px;
+                    color: #C5AB0D;
+                }
+            }
+        }
+        
+        .links{
+            p{
+                color: #7D7D7D;
+                font-size: 13px;
+            }
+            input{
+                width: 100%;
+                border: 0;
+                padding: 3px 10px;
+                margin-bottom: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                font-weight: 900;
+                padding: 5px 100px;
+                border-bottom: 4px solid #d4b70e;
+                border-radius: 3px;
+                background-color: #F2D529;
+                transition: all 0.15s;
+                &:hover{
+                    color: white;
+                    background-color: #535353;
+                    border-bottom: 4px solid #333333;
+                }
+            }
+        }
+
+    }
+    .end{
+        margin-top: 20px;
+        p{
+            font-size: 12px;
+            color: #7D7D7D;
+            a{
+                color: #6B6B6B;
+                text-decoration: none;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+        h6{
+            color: #6B6B6B;
+        }
+    }
 }
