@@ -819,6 +819,20 @@ main{
         .pagination{
             height: 50px;
             background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                cursor: pointer;
+                padding: 5px;
+                color: black;
+                border: 1px solid black;
+            }
+            .first{
+                background-color: black;
+                color: white;
+                border: 1px solid black;
+            }
         }
     }
     

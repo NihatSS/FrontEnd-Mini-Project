@@ -11,3 +11,21 @@ icons.forEach(element => {
         this.style.color = "white"
     });
 });
+
+
+let paginationA = document.querySelectorAll(".pagination span");
+
+paginationA.forEach(element => {
+    element.addEventListener("click", function(event) {
+        event.preventDefault();
+        
+        paginationA.forEach(el => {
+            el.style.backgroundColor = "white";
+            el.style.color = "black";
+        });
+
+        this.style.backgroundColor = "black";
+        this.style.color = "white";
+        this.style.border = "1px solid black";
+    });
+});
