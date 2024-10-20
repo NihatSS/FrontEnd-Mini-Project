@@ -358,6 +358,7 @@ header .main-navbar .from u {
 }
 
 main #products {
+  height: 2000px;
   background-color: #E6E6E6;
   padding: 20px 0;
 }
@@ -370,16 +371,6 @@ main #products .articles .card {
   height: 270px;
   padding: 0 10px;
   font-size: 13px;
-}
-main #products .articles .card .comment {
-  margin: 10px 0;
-}
-main #products .articles .card .comment a {
-  color: black;
-  text-decoration: none;
-}
-main #products .articles .card .comment a:hover {
-  color: #F0D215;
 }
 main #products .articles .card ul {
   list-style: none;
@@ -398,6 +389,88 @@ main #products .articles .card ul li:hover a {
 }
 main #products .articles .type a {
   font-size: 16px;
+}
+main #products .articles .catalog {
+  height: 550px;
+}
+main #products .articles .catalog .category .category-name {
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+}
+main #products .articles .catalog .category .size-options {
+  display: flex;
+  margin: 10px 0;
+}
+main #products .articles .catalog .category .size-options .checkbox * {
+  cursor: pointer;
+  font-size: 15px;
+}
+main #products .articles .catalog .category .size-options .checkbox span:hover {
+  color: #d4b70e;
+}
+main #products .articles .catalog .category .price span {
+  font-size: 14px;
+}
+main #products .articles .catalog .category .color-box .col-6 {
+  align-items: center;
+  gap: 10px;
+}
+main #products .articles .catalog .category .color-box .color {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
+main #products .articles .catalog .category .color-box span {
+  cursor: pointer;
+}
+main #products .articles .catalog .category .color-box span:hover {
+  color: #d4b70e;
+}
+main #products .articles .best-seller .card {
+  height: 400px;
+}
+main #products .articles .best-seller .card .car {
+  border-bottom: 1px solid #E6E6E6;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+main #products .articles .best-seller .card .car .image {
+  width: 50%;
+}
+main #products .articles .best-seller .card .car .image img {
+  width: 90%;
+}
+main #products .articles .best-seller .card .car a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-size: 14px;
+}
+main #products .articles .best-seller .card .car a:hover {
+  color: #d4b70e;
+}
+main #products .articles .recently-veiwed .card {
+  height: 100px;
+}
+main #products .articles .recently-veiwed .card .car {
+  padding: 10px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+main #products .articles .recently-veiwed .card .car .image {
+  width: 50%;
+}
+main #products .articles .recently-veiwed .card .car .image img {
+  width: 90%;
+}
+main #products .articles .recently-veiwed .card .car a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-size: 14px;
+}
+main #products .articles .recently-veiwed .card .car a:hover {
+  color: #d4b70e;
 }
 main #order-details {
   background: rgb(255, 188, 0);
